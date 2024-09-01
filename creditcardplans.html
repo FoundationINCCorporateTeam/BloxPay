@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloxPay Card Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .card h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .card p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .card .price {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        .card button {
+            background: #007bff;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+        .card button:hover {
+            background: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+        td {
+            background-color: #fafafa;
+        }
+        .check, .cross {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .check {
+            color: #28a745;
+        }
+        .cross {
+            color: #dc3545;
+        }
+        .card-grid .card:nth-child(1) {
+            grid-column: 1;
+        }
+        .card-grid .card:nth-child(2) {
+            grid-column: 2;
+        }
+        .card-grid .card:nth-child(3) {
+            grid-column: 3;
+        }
+        .card-grid .card:nth-child(4) {
+            grid-column: 4;
+        }
+        .card-grid .card:nth-child(5) {
+            grid-column: 5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>BloxPay Credit Card Plans</h1>
+
+    <!-- Card Display in Grid Layout -->
+    <div class="card-grid">
+        <div class="card">
+            <h2>BloxPay Bronze Free</h2>
+            <p class="price">0 Robux</p>
+            <p>This card provides basic access to BloxPay features with no cost. Enjoy a simple experience without any added perks or discounts.</p>
+            <br>
+            <button>Purchase</button>
+        </div>
+        <div class="card">
+            <h2>BloxPay Silver</h2>
+            <p class="price">40 Robux</p>
+            <p>Unlocks moderate benefits and discounts on in-game purchases. Ideal for players who want a step up from the free version without a big investment.</p>
+            <br>
+            <button>Purchase</button>
+        </div>
+        <div class="card">
+            <h2>BloxPay Gold</h2>
+            <p class="price">70 Robux</p>
+            <p>This tier offers enhanced features including exclusive discounts, exclusive promo code viewer, and a better overall in-game experience.</p>
+            <br>
+            <button>Purchase</button>
+        </div>
+        <div class="card">
+            <h2>BloxPay Platinum</h2>
+            <p class="price">100 Robux</p>
+            <p>Get premium benefits such as more significant discounts, free private servers, and access to exclusive in-game perks and content. (Comes with the VIP Status Role)</p>
+            <button>Purchase</button>
+        </div>
+        <div class="card">
+            <h2>BloxPay Diamond</h2>
+            <p class="price">120 Robux</p>
+            <p>Our top-tier card offering the ultimate in-game perks, including all benefits from lower tiers plus unique features and exclusive access. (Comes with the VIP+ Status Role)</p>
+            <button>Purchase</button>
+        </div>
+    </div>
+
+    <!-- Comparison Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Feature / Card</th>
+                <th>BloxPay Bronze Free</th>
+                <th>BloxPay Silver</th>
+                <th>BloxPay Gold</th>
+                <th>BloxPay Platinum</th>
+                <th>BloxPay Diamond</th>
+            </tr>
+        </thead>
+        <tbody>
+                      <tr>
+                <td>Monthly Fee</td>
+                <td>0 Robux</td>
+                <td>40 Robux</td>
+                <td>70 Robux</td>
+                <td>100 Robux</td>
+                <td>120 Robux</td>
+            </tr>
+            <tr>
+                <td>Discounts on All Purchases</td>
+                <td>0%</td>
+                <td>1%</td>
+                <td>2%</td>
+                <td>3%</td>
+                <td>4%</td>
+            </tr>
+                        <tr>
+                <td>Cash Back</td>
+                <td>0%</td>
+                <td>0.5%</td>
+                <td>1%</td>
+                <td>1.5%</td>
+                <td>2%</td>
+            </tr>
+            <tr>
+                <td>Free Sales and Discounts</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Purchase Protection (Purchase Insurance)*</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Loyalty and Rewards</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Premium Sales & Discounts</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Scam Guard</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                                    <tr>
+                <td>Card Addons</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Card Insurance**</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>No Payment Portal Ads</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                                    <tr>
+                <td>In-Game Currency Discounts (Select Experiences)</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Exclusive Promo Code Access</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                                    <tr>
+                <td>VIP Sales & Discounts</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                                   <tr>
+                <td>Exclusive VIP Trail (All Experiences with some exceptions)***</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>VIP Content Access (Select Experiences)</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Music Selection (All Experiences with some exceptions)****</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+                        <tr>
+                <td>Exclusive Diamond Trail (All Experiences with some exceptions)*****</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Free Private Servers (Select Experiences)</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td>Exclusive Diamond In-Game Perks (Select Experiences)******</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="cross">✘</td>
+                <td class="check">✔</td>
+            </tr>
+      </tbody>
+    </table>
+</div>
+
+</body>
+</html>
