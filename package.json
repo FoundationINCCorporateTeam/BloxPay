@@ -1,0 +1,21 @@
+{
+  "name": "credit-card-plans",
+  "version": "1.0.0",
+  "description": "A simple Express server to serve credit card comparison HTML files.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "server",
+    "credit-card",
+    "comparison"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
